@@ -19,10 +19,4 @@ export declare type AsyncFunctionArguments = {
   __original_require__: NodeRequire
 }
 
-export function callAsyncFunction<T>(
-  args: AsyncFunctionArguments,
-  source: string
-): Promise<T> {
-  const fn = new AsyncFunction(...Object.keys(args), source)
-  return fn(...Object.values(args))
-}
+/
