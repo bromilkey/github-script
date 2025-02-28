@@ -19,7 +19,4 @@ export const wrapRequire = new Proxy(__non_webpack_require__, {
     return target.apply(thisArg, [modulePath])
   },
 
-  get: (target, prop, receiver) => {
-    Reflect.get(target, prop, receiver)
-  }
-})
+/
