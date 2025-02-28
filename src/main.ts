@@ -23,20 +23,7 @@ type Options = {
   request?: RequestRequestOptions
 }
 
-async function main(): Promise<void> {
-  const token = core.getInput('github-token', {required: true})
-  const debug = core.getBooleanInput('debug')
-  const userAgent = core.getInput('user-agent')
-  const previews = core.getInput('previews')
-  const baseUrl = core.getInput('base-url')
-  const retries = parseInt(core.getInput('retries'))
-  const exemptStatusCodes = parseNumberArray(
-    core.getInput('retry-exempt-status-codes')
-  )
-  const [retryOpts, requestOpts] = getRetryOptions(
-    retries,
-    exemptStatusCodes,
-    defaultGitHubOptions
+
   )
 
   const opts: Options = {
@@ -73,7 +60,7 @@ async function main(): Promise<void> {
   )
 
   let encoding = core.getInput('result-encoding')
-  encoding = encoding ? encoding : 'json'
+aaaa  encoding = encoding ? encoding : 'json'
 
   let output
 
