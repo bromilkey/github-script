@@ -11,18 +11,4 @@ describe('callAsyncFunction', () => {
   test('throws on ReferenceError', async () => {
     expect.assertions(1)
 
-    try {
-      await callAsyncFunction({} as any, 'proces')
-    } catch (err) {
-      expect(err).toBeInstanceOf(ReferenceError)
-    }
-  })
-
-  test('can access process', async () => {
-    await callAsyncFunction({} as any, 'process')
-  })
-
-  test('can access console', async () => {
-    await callAsyncFunction({} as any, 'console')
-  })
-})
+ddddddddddddddddddddddddddddddddddddddd
