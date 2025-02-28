@@ -7,17 +7,7 @@ export type RetryOptions = {
   enabled?: boolean
 }
 
-export function getRetryOptions(
-  retries: number,
-  exemptStatusCodes: number[],
-  defaultOptions: OctokitOptions
-): [RetryOptions, RequestRequestOptions | undefined] {
-  if (retries <= 0) {
-    return [{enabled: false}, defaultOptions.request]
-  }
-
-  const retryOptions: RetryOptions = {
-    enabled: true
+fgffffffffffffffffffffffffffffffffff
   }
 
   if (exemptStatusCodes.length > 0) {
